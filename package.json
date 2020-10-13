@@ -1,5 +1,5 @@
 {
-  "name": "siyabulela-khumalo-282-node-sql-assignment-",
+  "name": "4",
   "version": "1.0.0",
   "description": "Node & SQL assignment (282)\r For raw project instructions see: https://raw.githubusercontent.com/Umuzi-org/tech-department/master/content/projects/nodejs/sql/_index.md",
   "main": "helloWorld.js",
@@ -8,7 +8,9 @@
     "jasmine": "^3.6.1",
     "mysql": "^2.18.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.6.1"
+  },
   "scripts": {
     "test": "jasmine"
   },
