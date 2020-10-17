@@ -9,6 +9,25 @@ const pool = new Pool({
   port: process.env.PG_PORT,
 });
 
+function createTable (){
+  pool.query(
+    `CREATE TABLE IF NOT EXISTS visitors(
+    visitorid SERIAL PRIMARY KEY, 
+    firstname VARCHAR(50) NOT NULL, 
+    age INT,
+    dateOfvisit DATE NOT NULL,
+    timeOfvisit TIME NOT NULL, 
+    personassisted VARCHAR(50) NOT NULL, 
+    comments VARCHAR(200) NOT NULL);`,
+    (err, res) => {
+      if (err) {
+        throw err;
+      }
+      console.log(`table visitor successfully created`);
+      pool.end();
+    }
+  );
+}
 function addNewVisitor(name, age, date, time, assistant, comments) {
   pool.query(
     `
