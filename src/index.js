@@ -28,6 +28,7 @@ function createTable (){
     }
   );
 }
+
 function addNewVisitor(name, age, date, time, assistant, comments) {
   pool.query(
     `
@@ -103,6 +104,7 @@ function listOneVisitor(visitorID) {
     }
   );
 }
+
 function deleteAllVisitor() {
   pool.query(
     `
@@ -125,4 +127,5 @@ module.exports = {
   listOneVisitor,
   deleteAllVisitor,
   pool,
+  createTable,
 };
