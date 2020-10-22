@@ -23,7 +23,7 @@ function createTable (){
       if (err) {
         throw err;
       }
-      console.log(`table visitor successfully created`);
+      console.log(`table visitors successfully created`);
       pool.end();
     }
   );
