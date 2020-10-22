@@ -11,14 +11,14 @@ const pool = new Pool({
 
 function createTable (){
   pool.query(
-    `CREATE TABLE IF NOT EXISTS visitors(
+    `CREATE TABLE IF NOT EXISTS VISITORS(
     visitorid SERIAL PRIMARY KEY, 
     firstname VARCHAR(50) NOT NULL, 
     age INT,
     dateOfvisit DATE NOT NULL,
     timeOfvisit TIME NOT NULL, 
     personassisted VARCHAR(50) NOT NULL, 
-    comments VARCHAR(200) NOT NULL);`,
+    comments VARCHAR(200) NOT NULL)`,
     (err, res) => {
       if (err) {
         throw err;
@@ -28,7 +28,6 @@ function createTable (){
     }
   );
 }
-
 function addNewVisitor(name, age, date, time, assistant, comments) {
   pool.query(
     `
@@ -104,7 +103,6 @@ function listOneVisitor(visitorID) {
     }
   );
 }
-
 function deleteAllVisitor() {
   pool.query(
     `
@@ -127,5 +125,4 @@ module.exports = {
   listOneVisitor,
   deleteAllVisitor,
   pool,
-  createTable,
 };

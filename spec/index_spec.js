@@ -6,7 +6,6 @@ const {
   listOneVisitor,
   deleteAllVisitor,
   pool,
-  createTable,
 } = require(`../src/index`);
 
 describe("Test if methods are called", () => {
@@ -20,17 +19,17 @@ describe("Test if methods are called", () => {
     listAllVisitors();
     expect(pool.query).toHaveBeenCalled();
   });
-  it("should query method deleteAVisitor", () => {
+  it("should query method deleteVisitor", () => {
     spyOn(pool, "query");
     deleteAVisitor();
     expect(pool.query).toHaveBeenCalled();
   });
-  it("should query method updateAVisitor", () => {
+  it("should query method deleteVisitor", () => {
     spyOn(pool, "query");
     updateAVisitor();
     expect(pool.query).toHaveBeenCalled();
   });
-  it("should query method listOneVisitor", () => {
+  it("should query method deleteVisitor", () => {
     spyOn(pool, "query");
     listOneVisitor();
     expect(pool.query).toHaveBeenCalled();
@@ -38,11 +37,6 @@ describe("Test if methods are called", () => {
   it("should query method deleteVisitor", () => {
     spyOn(pool, "query");
     deleteAllVisitor();
-    expect(pool.query).toHaveBeenCalled();
-  });
-  it("should query method createTable", () => {
-    spyOn(pool, "query");
-    createTable();
     expect(pool.query).toHaveBeenCalled();
   });
 });

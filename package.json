@@ -10,7 +10,7 @@
     "pg": "^8.4.1"
   },
   "devDependencies": {
-    "jasmine": "^3.6.2"
+    "jasmine": "^3.6.1"
   },
   "scripts": {
     "test": "jasmine"

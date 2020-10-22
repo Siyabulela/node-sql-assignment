@@ -1,4 +1,4 @@
 \node_modules
 \gitignore
+docker-compose.yaml
 .env
-\init
