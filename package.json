@@ -1,0 +1,28 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "description": "Node & SQL assignment (282)\r For raw project instructions see: https://raw.githubusercontent.com/Umuzi-org/tech-department/master/content/projects/nodejs/sql/_index.md",
+  "main": "helloWorld.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jasmine": "^3.6.1",
+    "mysql": "^2.18.1",
+    "pg": "^8.4.1"
+  },
+  "devDependencies": {
+    "jasmine": "^3.6.1"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umuzi-org/Siyabulela-Khumalo-282-node-sql-assignment-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umuzi-org/Siyabulela-Khumalo-282-node-sql-assignment-/issues"
+  },
+  "homepage": "https://github.com/Umuzi-org/Siyabulela-Khumalo-282-node-sql-assignment-#readme"
+}
