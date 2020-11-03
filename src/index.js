@@ -28,6 +28,8 @@ function createTable (){
     }
   );
 }
+createTable();
+
 function addNewVisitor(name, age, date, time, assistant, comments) {
   pool.query(
     `
